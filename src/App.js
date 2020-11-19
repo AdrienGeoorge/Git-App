@@ -50,7 +50,7 @@ class App extends Component {
             `${config.apiUrl.base}${config.apiUrl.users}${gitUsername}`,
             {
                 headers: {
-                    authorization: 'token 2834366dcd5281eba6bb7d7862b0068ef5ef27f6'
+                    authorization: 'token f184eaf054337fd97c60c6944f3101cc4d724c9b'
                 }
             }
         );
@@ -62,7 +62,7 @@ class App extends Component {
             `${config.apiUrl.base}${config.apiUrl.users}${gitUsername}${config.apiUrl.repos}`,
             {
                 headers: {
-                    authorization: 'token 2834366dcd5281eba6bb7d7862b0068ef5ef27f6'
+                    authorization: 'token f184eaf054337fd97c60c6944f3101cc4d724c9b'
                 }
             }
         );
