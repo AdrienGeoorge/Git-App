@@ -47,24 +47,14 @@ class App extends Component {
 
     async fetchUserInfos(gitUsername) {
         const req = await fetch(
-            `${config.apiUrl.base}${config.apiUrl.users}${gitUsername}`,
-            {
-                headers: {
-                    authorization: 'token f184eaf054337fd97c60c6944f3101cc4d724c9b'
-                }
-            }
+            `${config.apiUrl.base}${config.apiUrl.users}${gitUsername}`
         );
         return await req.json()
     }
 
     async fetchUserRepos(gitUsername) {
         const req = await fetch(
-            `${config.apiUrl.base}${config.apiUrl.users}${gitUsername}${config.apiUrl.repos}`,
-            {
-                headers: {
-                    authorization: 'token f184eaf054337fd97c60c6944f3101cc4d724c9b'
-                }
-            }
+            `${config.apiUrl.base}${config.apiUrl.users}${gitUsername}${config.apiUrl.repos}`
         );
         return await req.json()
     }
