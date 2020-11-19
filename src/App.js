@@ -6,6 +6,7 @@ import config from "./config"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css'
+import logo from "./logo.png";
 
 class App extends Component {
     constructor(props) {
@@ -76,9 +77,8 @@ class App extends Component {
                     </div>
                     :
                     <div className="wrapper">
-                        <SearchForm handleSubmit={this.handleSubmit}/>
-                        {isLoading && <span id="message">Please wait, search in progress...</span>}
-                        {!isLoading && userInfos.message && <span id="message">{userInfos.message}</span>}
+                        <img src={logo} alt="Logo" className="logo"/>
+                        <SearchForm handleSubmit={this.handleSubmit} isLoading={isLoading} userInfos={userInfos}/>
                     </div>
                 }
             </>

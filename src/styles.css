@@ -29,7 +29,7 @@ body, html, #root {
     color: #d0d0d0;
     font-size: 2em;
     text-align: center;
-    width: 15em;
+    width: 14em;
 }
 
 ::-webkit-input-placeholder {
@@ -104,7 +104,7 @@ input::-webkit-textfield-decoration-container {
     max-height: 100vh;
     overflow-y: scroll;
     color: white;
-    padding: 3em 1.5em;
+    padding: 3em 3em 3em 1.5em
 }
 
 #sticky::-webkit-scrollbar {
@@ -135,4 +135,10 @@ input::-webkit-textfield-decoration-container {
 .repoBlock:hover {
     color: rgba(215, 215, 215, 0.9);
     text-decoration: none;
+}
+
+@media screen and (max-width: 920px) {
+    #repoGrid {
+        grid-template-columns: 1fr;
+    }
 }
