@@ -1,0 +1,138 @@
+body, html, #root {
+    background-color: #343a40;
+    height: 100%;
+}
+
+#root {
+    position: relative;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.logo {
+    display: block;
+    width: 15em;
+    margin: 0 auto 2em auto;
+}
+
+#gitUsername {
+    background-color: unset;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #24282d;
+    color: #d0d0d0;
+    font-size: 2em;
+    text-align: center;
+    width: 15em;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+input::-webkit-textfield-decoration-container {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#search {
+    background: unset;
+    border: unset;
+    font-size: 1.5em;
+    margin-left: -1.5em;
+    color: #d0d0d0;
+}
+
+#message {
+    display: block;
+    font-size: 1.25rem;
+    margin: 1.5rem auto 0 auto;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #d2d2d2;
+    text-align: center;
+    width: 16em;
+}
+
+.row-height {
+    height: 100vh;
+}
+
+.infos {
+    word-wrap: break-word;
+    color: white;
+    padding: 0 2em;
+}
+
+#linear {
+    background-image: linear-gradient(to right, rgba(34, 130, 182, 0.51), rgba(59, 59, 59, 0.5));
+}
+
+#avatar {
+    width: 10em;
+    border-radius: 1em;
+}
+
+#login {
+    display: block;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#sticky {
+    position: sticky;
+    max-height: 100vh;
+    overflow-y: scroll;
+    color: white;
+    padding: 3em 1.5em;
+}
+
+#sticky::-webkit-scrollbar {
+    display: none;
+}
+
+#repoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 3em;
+}
+
+.repoBlock {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em;
+    padding: 1.5em 2em;
+    color: rgba(215, 215, 215, 0.9);
+}
+
+.repoBlock .more {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 1em;
+}
+
+.repoBlock:hover {
+    color: rgba(215, 215, 215, 0.9);
+    text-decoration: none;
+}
