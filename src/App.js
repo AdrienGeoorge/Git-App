@@ -66,11 +66,11 @@ class App extends Component {
             <>
                 {gitUsername && userInfos && userRepos && !userInfos.message ?
                     <div className="container-fluid" id="linear">
-                        <div className="row row-height">
-                            <div className="col-4 position-relative">
+                        <div className="container-fluid row">
+                            <div className="col-sm-4 position-relative">
                                 <UserInfos data={userInfos}/>
                             </div>
-                            <div className="col-8">
+                            <div className="col-sm-8">
                                 <UserRepos data={userRepos}/>
                             </div>
                         </div>

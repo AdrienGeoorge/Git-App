@@ -72,10 +72,6 @@ input::-webkit-textfield-decoration-container {
     width: 16em;
 }
 
-.row-height {
-    height: 100vh;
-}
-
 .infos {
     word-wrap: break-word;
     color: white;
@@ -83,7 +79,7 @@ input::-webkit-textfield-decoration-container {
 }
 
 #linear {
-    background-image: linear-gradient(to right, rgba(34, 130, 182, 0.51), rgba(59, 59, 59, 0.5));
+    background: linear-gradient(to bottom right, rgba(34, 130, 182, 0.51), rgba(59, 59, 59, 0.5));
 }
 
 #avatar {
@@ -140,5 +136,32 @@ input::-webkit-textfield-decoration-container {
 @media screen and (max-width: 920px) {
     #repoGrid {
         grid-template-columns: 1fr;
+    }
+
+    .infos {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        padding: 4em 0 1em 0;
+    }
+
+    #sticky {
+        position: unset;
+        max-height: unset;
+        overflow-y: unset;
+    }
+
+    #gitUsername {
+        width: 80%;
+        font-size: 1.5em;
+    }
+
+    #search {
+        font-size: 1em;
+    }
+
+    #linear {
+        background: unset;
     }
 }
